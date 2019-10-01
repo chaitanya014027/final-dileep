@@ -23,8 +23,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'maven_3.6.2') {
-                    sh 'mvn deploy'
+                echo 'deployment done'
                 }
             }
         }
